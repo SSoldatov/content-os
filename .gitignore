@@ -1,4 +1,6 @@
-storage/n8n/
+storage/n8n/*
+!storage/n8n/.gitkeep
+
 .env
 .DS_Store
 .vscode/
