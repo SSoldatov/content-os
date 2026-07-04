@@ -1,0 +1,4 @@
+storage/n8n/
+.env
+.DS_Store
+.vscode/
