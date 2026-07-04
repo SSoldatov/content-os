@@ -1,6 +1,6 @@
 services:
   n8n:
-    image: n8nio/n8n:1.103.2
+    image: n8nio/n8n:2.17.5
     container_name: content-os-n8n
     restart: unless-stopped
 
@@ -9,6 +9,10 @@ services:
 
     environment:
       TZ: Europe/Stockholm
+      GENERIC_TIMEZONE: Europe/Stockholm
+      N8N_HOST: content-os-n8n.devplat.ru
+      N8N_PROTOCOL: https
+      WEBHOOK_URL: https://content-os-n8n.devplat.ru/
 
     volumes:
       - ../storage/n8n:/home/node/.n8n
